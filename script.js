@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.post("/submit-form", (req, res) => {
     const { name, message } = req.body;
     console.log(`Neue Nachricht von ${name}: ${message}`);
-    res.send(`<h1>Danke für deine Nachricht, ${name}!</h1>`);
+    res.sendFile(__dirname + "/public/submit_Message.html");
 });
 
 // 📌 Server starten
