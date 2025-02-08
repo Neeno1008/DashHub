@@ -1,0 +1,38 @@
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dash Hub</title>
+        <link rel="stylesheet" href="Stylesheets/MainStyle.css">
+        <link rel="stylesheet" href="Stylesheets/Auth.css">
+    </head>
+    <body>
+        <div id="Auth">
+            <div class="Info-container">
+                <h2>Wilkommen</h2>
+                Dash Hub ist ein Test Projekt, bei den ich noch nicht weiß, 
+                wo es hingeht, ich versuche erstmal ein Register und 
+                Anmeldeformular zu stellen dies kann aber einige Zeit noch dauern.
+            </div>
+            
+            <div class="Auth-container">
+                <h2>Dash Hub</h2>
+                <button id="Login">Login</button>
+                <button id="Register">Register</button>
+            </div>
+
+            <div class="form-container">
+                <h2 style="text-align: center;">Test Formular</h2>
+                <form action="/submit-form" method="POST">
+                    <br>
+                    <input placeholder="Name" type="text" id="name" name="name" required>
+                    <br><br>
+                    <textarea placeholder="Nachricht" id="message" name="message" required></textarea>
+                    <br><br><br>
+                    <button type="submit">Absenden</button>
+                </form>                
+            </div>
+        </div>
+
+    </body>
+</html>

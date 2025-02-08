@@ -1,15 +1,26 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3111;
 
-// Statische Dateien (HTML, CSS, JS) bereitstellen
+// 📌 Statische Dateien bereitstellen (HTML, CSS, JS)
 app.use(express.static("public"));
+
+// 📌 Middleware zum Verarbeiten von Formulardaten
+app.use(express.urlencoded({ extended: true }));
 
 // Standard-Route
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
 });
 
+// 📌 Route zum Empfangen des Formulars
+app.post("/submit-form", (req, res) => {
+    const { name, message } = req.body;
+    console.log(`Neue Nachricht von ${name}: ${message}`);
+    res.send(`<h1>Danke für deine Nachricht, ${name}!</h1>`);
+});
+
+// 📌 Server starten
 app.listen(port, () => {
     console.log(`🚀 Server läuft auf http://localhost:${port}`);
 });

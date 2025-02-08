@@ -1,0 +1,85 @@
+body {
+
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+button {
+
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0b0ff7;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+
+button:hover {
+    background-color: #090b92; /* Dunklere Hintergrundfarbe beim Hover */
+}
+
+.Info-container {
+
+    width: 400px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    margin: 35px;
+    border-radius: 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+.form-container {
+
+    width: 400px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    margin: 35px;
+    border-radius: 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    background-color: #77777700;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+    height: 150px;        /* Höhe des Textarea-Feldes */
+}
+
+input {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    background-color: #77777700;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+    height: 30px;        /* Höhe des Textarea-Feldes */
+}
