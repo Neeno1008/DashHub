@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3111;
+const port = 3110;
 
 // 📌 Statische Dateien bereitstellen (HTML, CSS, JS)
 app.use(express.static("public"));
@@ -24,3 +24,4 @@ app.post("/submit-form", (req, res) => {
 app.listen(port, () => {
     console.log(`🚀 Server läuft auf http://localhost:${port}`);
 });
+
